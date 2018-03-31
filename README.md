@@ -1,26 +1,10 @@
-# gatsby-starter-default
-The default Gatsby starter.
+Squeezebox Portfolio Template
+=========
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+An intro block that slides out to uncover a gallery of portfolio items.
 
-## Install
+[Article on CodyHouse](http://codyhouse.co/gem/squeezebox-portfolio-template/)
 
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
-
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
-npm run develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[Demo](http://codyhouse.co/demo/squeezebox-portfolio-template/index.html)
+ 
+[Terms](http://codyhouse.co/terms/)
