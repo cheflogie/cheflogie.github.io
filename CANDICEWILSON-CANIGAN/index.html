@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  	
+  	
+	<title>CANIGAN UPDATE</title>
+	<style>
+		.padmeup {
+			padding: 5px 7px 5px 7px;
+
+
+		}
+
+		#logohomepage {
+			position: relative;
+			top: 0;
+			left: 0;
+			transform: translate(-67%);
+			max-width: 40%;
+			height: 35%;
+			width: 35%;
+			margin-left: -23%
+
+
+		}
+
+		@media only screen and (min-width: 768px){
+			.cd-section { padding: 7%;
+				
+        }
+
+
+
+
+
+} /*end media query */
+
+
+header {
+	background: url(http://www.shaklee.tv/7718127/26908538/393d04446d640a571da31706ddd1f4de/portrait);
+filter: contrast(90%); 
+
+-webkit-background-size: cover;
+background-size: cover;
+background-repeat: no-repeat;
+};
+
+
+.video_holder {
+	background-color: transparent;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+
+	
+}
+
+
+.home-carousel {
+  position: relative;
+  background: url('../img/photogrid.jpg') center center repeat;
+  background-size: cover;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.home-carousel .dark-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #009F52;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.home-carousel .owl-carousel {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.home-carousel .owl-theme .owl-controls .owl-page span {
+  background: #666;
+}
+.home-carousel .owl-theme .owl-controls .owl-page.active span {
+  background: #fff;
+}
+.home-carousel .owl-theme .owl-controls .owl-page:hover span {
+  background: #fff;
+}
+@media (max-width: 767px) {
+  .home-carousel {
+    text-align: center !important;
+  }
+}
+@media (min-width: 992px) {
+  .home-carousel .right {
+    text-align: right;
+  }
+}
+.home-carousel h1,
+.home-carousel h2,
+.home-carousel h3,
+.home-carousel p,
+.home-carousel ul {
+  color: #fff;
+}
+.home-carousel h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 46px;
+  letter-spacing: 0.08em;
+}
+@media (max-width: 991px) {
+  .home-carousel h1 {
+    font-size: 36px;
+  }
+}
+.home-carousel h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 0.08em;
+}
+.home-carousel ul,
+.home-carousel p {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+}
+@media (max-width: 991px) {
+  .home-carousel ul,
+  .home-carousel p {
+    font-size: 14px;
+  }
+}
+.home-carousel ul li {
+  margin-bottom: 10px;
+}
+
+.cd-placeholder-1 {/*background-image: url(http://www.freemagebank.com/wp-content/uploads/edd/2015/01/XB000018-1560x1040.jpg);*/
+}
+
+
+.carouselly { 
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+    padding: 5px 7px 5px 7px;
+    background-color: transparent;
+	}
+
+
+
+
+
+
+
+
+.menu-button {
+  border: 0;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 50px;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 999999;
+  outline: none;
+  cursor: pointer;
+}
+.menu-button:hover,
+.menu-button.active {
+  background-color: yellow;
+}
+.menu-button:hover .menu-bar,
+.menu-button.active .menu-bar {
+  background-color: black;
+}
+.menu-button .menu-bar {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  position: relative;
+  margin: 4px 0;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+#menu {
+  width: 0;
+  height: 0;
+  position: fixed;
+  background-color: #ccffff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.menu-nav {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 2rem;
+  overflow: hidden;
+}
+.menu-nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+  opacity: 0;
+  font-family: 'Space Mono', monospace;
+}
+.menu-nav a:hover {
+  background-color: #ffffff;
+}
+
+
+
+marquee{
+	top: 0;
+  color: #fff;
+  font-size: 36px;
+  font-family: 'LED';
+  background-color: #000;
+  border: 14px solid black;
+  padding: 5px 7px 5px 7px;
+ 
+
+}
+.tic{
+  position: relative;
+   bottom: 0;
+   left:0;
+  
+   
+   width: 100%;
+     min-width: 100% !important;
+}
+
+</style>
+</head>
+<body>
+	<div class ="tic"><marquee  behavior="scroll" direction="left" speed="1000" class="Ticker">Hi, Welcome to my site. Email Me @ LoganWilsonis@yahoo.com for inquiries</marquee></div>
+	<main>
+		
+
+		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+
+<button class="menu-button" style="position: absolute;z-index: 9999999;margin-top: 1%;top: 0;">
+  <div class="menu-bar"></div>
+  <div class="menu-bar"></div>
+  <div class="menu-bar"></div>
+  <div style="position: relative;left: 50%;transform: translate(-50%);margin-left: -1%;">MENU</div>
+</button>
+<nav id="menu">
+  <ul class="menu-nav">
+    <li><a href="#">Email Me</a></li>
+    <li><a href="#">Download My Resume</a></li>
+    <li><a href="#">Cool Articles</a></li>
+    <li><a href="#">My Certifications</a></li>
+    <li><a href="#">Cool Things to Kill Time</a></li>
+  </ul>
+</nav>
+		
+		<header class="cd-section">
+			<div class="cd-container">
+				<img id="logohomepage" src="img/candycaniganlogo.png" alt="canigan-intl-logo" class="padmeup"><a href="http://www.caniganintl.com" class="padmeup"></a></img>
+					<h1 style="color: #fff;font-size:3rem;text-shadow: 3px solid black;stroke: 3px solid black;">Canigan INTL</h1>
+				    	<p style="color: #000;"></p>
+
+				
+			</div> <!-- cd-container -->
+		</header>
+		
+		<section class="cd-section cd-placeholder-1">
+			<div class="cd-container">
+				<h2><div class="video_holder">
+					<iframe class="padmeup" src="https://www.youtube.com/embed/TkEevQZyWKI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div></h2>
+			    	<a href="facebook.com"><iframe src="http://events.shaklee.com" style="background-attachment: fixed;width: 100%;height: 100vh;" frameborder="0" autoplay="false" border="0" scrolling="yes" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1" gesture="media" mobile-ready="true">
+	
+			    	</iframe></a>
+		</section>
+
+		<section class="cd-section cd-placeholder-2">
+			<div class="cd-container">
+				<h2>There is an App for that</h2>
+				<p>Now your business goes where you go!
+Use Shaklee Connect™ to drive growth and sales volume with powerful data and actionable business insights…all from your phone.
+<li style="line-height: 1.5;">View Business Leaders up to 6 levels down in your Business Organization report
+</li>
+<li style="line-height: 1.5;">Set your own custom Volume goals</li>
+<li>See the latest announcements from Shaklee HQ in News & Events
+</li>
+<li style="line-height: 1.5;">Get push notifications that keep you updated on relevant activity</li>
+<li style="line-height: 1.5;">Stay on top of Alerts by flagging ones you’ve already acted on</li>
+<li style="line-height: 1.5;">Update your profile photo with pictures from your phone</li>
+<li style="line-height: 1.5;">Continued improvement in overall app speed and stability (including more frequent Alert refreshes)</li>
+<!--View Business Leaders up to 6 levels down in your Business Organization report
+Set your own custom Volume goals
+See the latest announcements from Shaklee HQ in News & Events
+Get push notifications that keep you updated on relevant activity
+Stay on top of Alerts by flagging ones you’ve already acted on
+Update your profile photo with pictures from your phone
+Continued improvement in overall app speed and stability (including more frequent Alert refreshes)-->
+
+</p>
+			</div> <!-- cd-container -->
+		</section>
+
+		<section id="cd-team" class="cd-section">
+			<div class="cd-container">
+				<h2>Our team</h2>
+				 
+				<ul>
+					<li>
+						<a href="#0" data-type="member-1">
+							<figure>
+								<img src="img/team-member-1.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View Bio</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								John Smith <span>CEO</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+					
+					<li>
+						<a href="#0" data-type="member-2">
+							<figure>
+								<img src="img/team-member-1.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View Bio</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								Cristina Cameron <span>Marketing</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+
+					<li>
+						<a href="#0" data-type="member-3">
+							<figure>
+								<img src="img/team-member-1.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View Bio</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								Samuel Noel <span>Web Design</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+				</ul>
+			</div> <!-- cd-container -->
+		</section> <!-- cd-team -->
+
+		<div class="cd-overlay"></div>
+	</main>
+
+	<div class="cd-member-bio member-1">
+		<div class="cd-member-bio-pict">
+			<img src="img/member-bio-img-1.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1>Meet John Smith</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	<div class="cd-member-bio member-2">
+		<div class="cd-member-bio-pict">
+			<img src="img/member-bio-img-2.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1>Meet Cristina Cameron</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	<div class="cd-member-bio member-3">
+		<div class="cd-member-bio-pict">
+			<img src="img/member-bio-img-3.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1>Meet Samuel Noel</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+	<a href="#0" class="cd-member-bio-close">Close</a> <!-- close the author bio section -->
+
+
+
+
+	<!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img class="carouselly" src="https://s3.amazonaws.com/uploads.hipchat.com/697967/4899719/pc5PpE4Flld4VOe/mainCarousel-kayak-cangn.png" style="width:100%">
+    
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img class="carouselly" src="https://s3.amazonaws.com/uploads.hipchat.com/697967/4899719/xwNUeY8W35QKYMi/mainz-carousel-jewel.png" style="width:100%">
+    
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img class="carouselly" src="https://s3.amazonaws.com/uploads.hipchat.com/697967/4899719/Y9E21sTU6jpHCQF/mainz-carousel-dog.png" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides w3-display-container w3-center">
+    <img class="carouselly" src="https://s3.amazonaws.com/uploads.hipchat.com/697967/4899719/vArAHIXvtQ3FtoY/leaf-carousel-mainz.jpg" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides w3-display-container w3-center">
+    <img class="carouselly" src="https://s3.amazonaws.com/uploads.hipchat.com/697967/4899719/qyqz1ao7TAIHDc7/mainz-carousel-sunflower.png" style="width:100%">
+    
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img class="carouselly" src="https://images.shaklee.com/newDotCom/pg2015-Rev2.jpg" style="width:100%">
+    
+  </div>
+  
+  
+  </div>
+  <!--main carousel end-->
+            <!-- *** HOMEPAGE CAROUSEL END *** -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Gem jQuery -->
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+</script>
+<script>$(document).ready(function () {
+  var bars = $('.menu-bar');
+  var menu = $('#menu');
+  var menuButton = $('.menu-button');
+  var timeline = new TimelineMax({paused: true});
+  var open = false;
+  
+  timeline
+  .to(bars[0], 0.1, {
+    top: '5px',
+    rotation: 45,
+  }, 0)
+  .to(bars[1], 0.1, {
+    opacity: 0
+  }, 0)
+  .to(bars[2], 0.1, {
+    top: '-7px',
+    rotation: -45,
+  }, 0)
+  .to(menu, 0.4, {
+    width: '100%',
+    height: '0.5%',
+  }, '-=0.2')
+  .to(menu, 0.4, {
+    height: '100%',
+    ease: Bounce.easeOut
+  }, '-=0.2')
+  .to(menu.find('a'), 0.4, {
+    opacity: 1
+  })
+  
+  menuButton.on('click', function () { 
+    $(this).toggleClass('active');
+    if (open) {
+      timeline.reverse();
+      open = false;
+    } else {
+      timeline.play();
+      open = true;
+    }
+  });
+  
+  menu.find('a').on('click', function () {
+    timeline.reverse();
+  });
+});</script>
+</body>
+</html>
