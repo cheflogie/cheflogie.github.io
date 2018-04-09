@@ -164,7 +164,8 @@ header p {
 }
 
 .cd-placeholder-1 {
-  background: #f25f5c;
+ /* background: #f25f5c; */
+ background-color: green;
   color: #fdeaea;
 }
 
