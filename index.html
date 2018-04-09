@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
   	
@@ -29,7 +30,8 @@
 			max-width: 40%;
 			height: 35%;
 			width: 35%;
-			margin-left: -23%
+			margin-left: -23%;
+			margin-top: -20px;
 
 
 		}
@@ -260,19 +262,30 @@ marquee{
      min-width: 100% !important;
 }
 
+#italicky { 
+	background-color: #fff;
+	border: 3px solid #fff;
+	color: #000;
+	font-style: italic;
+	padding: 5px 7px 5px 7px;
+
+}
+
+
 </style>
 </head>
 <body>
-	<div class ="tic"><marquee  behavior="scroll" direction="left" speed="1000" class="Ticker">Hi, Welcome to my site. Email Me @ LoganWilsonis@yahoo.com for inquiries</marquee></div>
+	<div class ="tic"><marquee  behavior="scroll" direction="left" speed="1000" class="Ticker">Hi, Welcome to Canigan INTL. Email Me @ Candy@caniganintl.com for inquiries</marquee></div>
 	<main>
 		
 
 		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 
-<button class="menu-button" style="position: absolute;z-index: 9999999;margin-top: 1%;top: 0;">
-  <div class="menu-bar"></div>
-  <div class="menu-bar"></div>
-  <div class="menu-bar"></div>
+<button class="menu-button" style="position: absolute;z-index: 9999999;margin-top: 1%;top: 0;right: 0;">
+   <div style="display: none;" class="menu-bar"></div>
+  <div style="display: none;" class="menu-bar"></div>
+  <div style="display: none;" class="menu-bar"></div>
+  <i style="position: relative;top:50%;left:50%;transform: translate(-50%); padding: 5px 7px 5px 7px; color: #fff; font-size: 4em;margin-top: -0.3em;" class="fa fa-home"></i>
   <div style="position: relative;left: 50%;transform: translate(-50%);margin-left: -1%;">MENU</div>
 </button>
 <nav id="menu">
@@ -288,7 +301,7 @@ marquee{
 		<header class="cd-section">
 			<div class="cd-container">
 				<img id="logohomepage" src="img/candycaniganlogo.png" alt="canigan-intl-logo" class="padmeup"><a href="http://www.caniganintl.com" class="padmeup"></a></img>
-					<h1 style="color: #fff;font-size:3rem;text-shadow: 3px solid black;stroke: 3px solid black;">Canigan INTL</h1>
+					<h1 style="color: #fff;font-size:3rem;text-shadow: 3px solid black;stroke: 3px solid black;font-family: 'Space Mono', monospace;">Canigan INTL</h1>
 				    	<p style="color: #000;"></p>
 
 				
@@ -300,20 +313,23 @@ marquee{
 				<h2><div class="video_holder">
 					<iframe class="padmeup" src="https://www.youtube.com/embed/TkEevQZyWKI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div></h2>
-			    	<iframe src="https://events.shaklee.com" style="background-attachment: fixed;width: 100%;height: 100vh;" frameborder="0" autoplay="false" border="0" scrolling="yes" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1" gesture="media" mobile-ready="true">
-	
-			    	</iframe>
+			    	<div style="background-attachment: fixed;width: 100%;height: 100vh;">
+			    		<div class="imgholder">
+			    			<img src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fohcantik.com%2Fwp-content%2Fuploads%2F2015%2F11%2Fall-new-1.jpg&f=1" alt="" class="shakpic">
+			    		
+			    		</div> 
+			  		 </div>
 		</section>
 
 		<section class="cd-section cd-placeholder-2">
 			<div class="cd-container">
-				<h2>There is an App for that</h2>
-				<p>Now your business goes where you go!
-Use Shaklee Connect™ to drive growth and sales volume with powerful data and actionable business insights…all from your phone.
+				<h2 style="border:3px solid black;padding: 5px 7px 5px 7px; line-height: 3.2rem;"><span id="italicky">Now your business goes where you go!
+Use Shaklee Connect™  </span></h2>
+				<p> Drive growth and sales volume with powerful data and actionable business insights…all from your phone.
 <li style="line-height: 1.5;">View Business Leaders up to 6 levels down in your Business Organization report
 </li>
 <li style="line-height: 1.5;">Set your own custom Volume goals</li>
-<li>See the latest announcements from Shaklee HQ in News & Events
+<li>See the latest announcements from Shaklee HQ in News &amp; Events
 </li>
 <li style="line-height: 1.5;">Get push notifications that keep you updated on relevant activity</li>
 <li style="line-height: 1.5;">Stay on top of Alerts by flagging ones you’ve already acted on</li>
@@ -333,18 +349,19 @@ Continued improvement in overall app speed and stability (including more frequen
 
 		<section id="cd-team" class="cd-section">
 			<div class="cd-container">
-				<h2>Our team</h2>
+				<h2>   </h2>
 				 
 				<ul>
 					<li>
 						<a href="#0" data-type="member-1">
 							<figure>
-								<img src="img/team-member-1.jpg" alt="Team member 1">
-								<div class="cd-img-overlay"><span>View Bio</span></div>
+								<img  src="https://images.shaklee.com/healthprint/landing/hp-landing-lifestyle-01a-usen.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>Learn More</span></div>
 							</figure>
 
 							<div class="cd-member-info">
-								John Smith <span>CEO</span>
+								START NOW
+20 QUESTIONS THAT CAN CHANGE YOUR LIFE
 							</div> <!-- cd-member-info -->
 						</a>
 					</li>
@@ -352,12 +369,12 @@ Continued improvement in overall app speed and stability (including more frequen
 					<li>
 						<a href="#0" data-type="member-2">
 							<figure>
-								<img src="img/team-member-1.jpg" alt="Team member 1">
-								<div class="cd-img-overlay"><span>View Bio</span></div>
+								<img src="https://images.shaklee.com/espot-naturally.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>Check Out Blog</span></div>
 							</figure>
 
-							<div class="cd-member-info">
-								Cristina Cameron <span>Marketing</span>
+							<div class="cd-member-info" style="padding: 5px 7px 5px 7px;">
+								Become a healthier, more amazing you. Find it all here on our blog
 							</div> <!-- cd-member-info -->
 						</a>
 					</li>
@@ -365,12 +382,12 @@ Continued improvement in overall app speed and stability (including more frequen
 					<li>
 						<a href="#0" data-type="member-3">
 							<figure>
-								<img src="img/team-member-1.jpg" alt="Team member 1">
+								<img src="http://images.shaklee.com/newDotCom/leadership/company_lead_rBarnett2.jpg" alt="Team member 1">
 								<div class="cd-img-overlay"><span>View Bio</span></div>
 							</figure>
 
 							<div class="cd-member-info">
-								Samuel Noel <span>Web Design</span>
+								Roger Barnett <span>CEO</span>
 							</div> <!-- cd-member-info -->
 						</a>
 					</li>
@@ -387,9 +404,10 @@ Continued improvement in overall app speed and stability (including more frequen
 		</div> <!-- cd-member-bio-pict -->
 
 		<div class="cd-bio-content">
-			<h1>Meet John Smith</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+			<h1 style="padding: 5px 7px 5px 7px;"> <a href=""> Get Your Personalized Shaklee Healthprint</a><a href="" style="color: #fff;">Get STARTED NOW</a></h1>
+			<img src="https://images.shaklee.com/healthprint/landing/hp-landing-chart-01a-usen.jpg" alt="">
+			<br>
+			<img style="padding: 5px 7px 5px 7px;background-color: #fff;" src="https://images.shaklee.com/healthprint/landing/hp-landing-logos-01a-usen.jpg" alt="">
 		</div> <!-- cd-bio-content -->
 	</div> <!-- cd-member-bio -->
 
@@ -399,9 +417,30 @@ Continued improvement in overall app speed and stability (including more frequen
 		</div> <!-- cd-member-bio-pict -->
 
 		<div class="cd-bio-content">
-			<h1>Meet Cristina Cameron</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+			<button class="wiggle" style="padding: 5px 7px 5px 7px;background-color: #fff;border-radius: 45px;position: relative;left: 50%;transform: translate(-50%);border: 10px solid transparent;"><a style='font-size: 2em;' href="http://go.shaklee.com/naturally/"> Go To Blog </a></button>
+			<h1 style="margin-top: 5%;	position: 5px 7px 5px 7px;">Top 5 reasons to go green with Get Clean®</h1>
+			<p>Your world makes up everything around you—so shouldn’t it be a clean and healthy one? The Get Clean® line lets you take care of the world you live in with powerful, natural, and nontoxic cleaning choices that are Safe for You, Your Home, and Your Planet®.</p>
+
+
+<p>Safe: Get Clean means a safer home
+Some ingredients found in common cleaners may be toxic, like butyl cellosolve™, ammonia, formaldehyde, etc. Doesn’t sound clean at all, right? Thankfully, Get Clean has none of these things. Get Clean products are nontoxic and free of harmful fumes, nitrates, phosphates and chlorine bleach.</p>
+
+<p>Powerful: Tough on dirt, gentle on the environment
+Typically, strong cleaners are rough on the environment, but a lot of eco-friendly cleaners seem a little too “friendly” to dirt. With Get Clean, you don’t have to choose between powerful cleaners and powerful convictions to take care of your home.</p>
+
+<p>Green: Earth-friendly cleaning agents
+While you clean your house, you can keep your planet clean too. Get Clean uses biodegradable, earth-friendly cleaning agents with no phosphates, nitrates, or other things that the planet doesn’t like. And, Get Clean products are super-concentrated, which means less weight to ship, less product needed to get the job done, and less packaging to throw away. When you use the Get Clean Starter Kit, you help keep 108 pounds of packaging waste from landfills and eliminate 248 pounds of greenhouse gas.*</p>
+
+<p>Smart: Save money while you help save the earth
+We made Get Clean concentrated not only to reduce waste for our planet but to make it more economical too. With some cleaners, a lot of what you’re paying for is water; our smaller bottles contain a lot more cleaning power and save you a lot more money ounce for ounce. You have nothing to lose but dirt. You would have to spend $3,400 for ready-to-use cleaners to get the same amount of clean found in the Get Clean Starter Kit.* Wow!</p>
+
+<p>Multi-talented: One product, multiple uses
+Get Clean Nature Bright® Laundry Booster and Stain Remover acts as a powerful stain-fighter, brightener, and bleach alternative.
+Basic H2® dominates grease, grime, and dirt in a thousand different ways. One 16-oz. bottle makes 48 gallons of powerful cleaner. That’s equivalent to the same cleaning uses as 5,824 bottles of the 26-oz. size of Windex®.†
+
+When it comes to keeping your house clean, the earth safe, and your family healthier, you shouldn’t have to choose just one. It’s time to Get Clean!</p>
+
+†Based on Volumetric comparison. *Based on comparable number of uses from ready-to-use cleaners</p>
 		</div> <!-- cd-bio-content -->
 	</div> <!-- cd-member-bio -->
 
@@ -411,9 +450,15 @@ Continued improvement in overall app speed and stability (including more frequen
 		</div> <!-- cd-member-bio-pict -->
 
 		<div class="cd-bio-content">
-			<h1>Meet Samuel Noel</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+			<h1>Meet Roger Barnett</h1>
+			<h2 style="padding: 5px 7px 5px 7px;position: relative;left: 50%;transform: translate(-50%);text-align: center;">Chairman and CEO</h2>
+			<p>Mr. Barnett is the Chairman and CEO of Shaklee Corporation. Founded in 1956, Shaklee is the number one natural nutrition and green cleaning products company in the U.S., with more than 1.2 million members and distributors in the U.S., Japan, Mexico, Malaysia, Canada, Taiwan, and China. In 2000, Shaklee was the first company in the world to become Climate Neutral Certified to fully offset its carbon emissions.</p>
+			<p>Roger Barnett, Chairman and CEO
+Mr. Barnett is the Chairman and CEO of Shaklee Corporation. Founded in 1956, Shaklee is the number one natural nutrition and green cleaning products company in the U.S., with more than 1.2 million members and distributors in the U.S., Japan, Mexico, Malaysia, Canada, Taiwan, and China. In 2000, Shaklee was the first company in the world to become Climate Neutral Certified to fully offset its carbon emissions.
+
+Mr. Barnett began his career at the investment banking firm Lazard Freres & Co. He then organized an investment group to acquire control of Arcade, Inc., which he transformed into the largest sampling company in the world, expanding from a solely U.S. operation into a global business. He was also the founder and Chairman and CEO of Beauty.com, which was one of the first internet retailers in the cosmetics industry.</p>
+
+<p>Mr. Barnett received his undergraduate degree from Yale College (Summa Cum Laude), his law degree from Yale Law School (Senior Editor, Yale Law Journal), and his MBA from Harvard Business School. Mr. Barnett has been selected as a Global Leader for Tomorrow by the World Economic Forum (Davos) and has also been selected as a Young Leader Fellow of the National Committee on U.S.-China Relations. Additionally, Mr. Barnett serves as a member of the Harvard and Yale Schools of Public Health Leadership Councils, the Yale University President's Council on International Activities, the Board of Directors of the Elie Wiesel Foundation for Humanity, and the Advisory Board of 2004 Nobel Peace Laureate Wangari Maathai's The Green Belt Movement. </p>
 		</div> <!-- cd-bio-content -->
 	</div> <!-- cd-member-bio -->
 	<a href="#0" class="cd-member-bio-close">Close</a> <!-- close the author bio section -->
@@ -445,7 +490,7 @@ Continued improvement in overall app speed and stability (including more frequen
     
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img class="carouselly" src="https://images.shaklee.com/newDotCom/pg2015-Rev2.jpg" style="width:100%">
+    <img class="carouselly" src="##" style="width:100%">
     
   </div>
   
