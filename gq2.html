@@ -1088,7 +1088,23 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
   background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
   background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
-  margin-bottom: 50px;
+  margin-bottom: 50px;}
+
+.topBanner  {position: absolute;top:0;left:0;width: 100%;height: 5vh;background-color: #934;z-index: 0;
+text-align: center;
+  
+}
+
+.neoNav {display: inline-block;
+  height: 10px;
+  width: 12%;
+  /*flex-direction: row;*/
+  color: #fff;
+
+
+
+
+
 }
 
 </style>
@@ -1099,15 +1115,27 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   See more here: https://drafts.csswg.org/css-grid-1/
 -->
 <div class="page">
-  <h1 class="page-title">Inner G Logo</h1>
-  <div class="grid">
+  <!--    insert my own nav -->
+  <div class="topBanner" style="">
+    <div class="topBanner" style="background-color: #000;height: 7vh;margin-top: 7vh;">
+    <li class="neonav" id="01">pro</li>
+    <li class="neonav" id="02">meth</li>
+    <li class="neonav" id="03">is</li>
+    <li class="neonav" id="04">prodo</li>
+    <li class="neonav" id="05">fosho</li>
+
+  </div>
+</div>
+<!--/. end neo nav  -->
+  <h1 class="page-title"><br></h1>
+  <div class="grid" style="margin-top: 13vh;">
     <div class="item small-ad" style="width: 100%;">
       <a style="margin-top:9.25%;" class="link-block" href="#">
         Classic <span class="serif">Summer</span> Collections
       </a>
     </div>
     <div class="item article-header">
-      <h2 class="title-block" style="">Restorative &amp; Holistic Care</h2>
+      <h2 class="title-block" style="font-size: 2.45em;">Restorative &amp; Holistic Care</h2>
       <h3 class="title-tag serif"><span style="color: #934;">Beauty</span> at Hand</h3>
     </div>
     <div class="item article-body">
