@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins|Russo+One" rel="stylesheet">
     <style>
 
+    #maincontent>h1 {font-size: 3rem !important; }
+     .specials>h1 {font-size: 3rem !important; }
+
 #couponbanner { 
 	background: url(http://www.pappaninospizza.com/wp-content/uploads/2018/03/stadium-1.png);
 	background-repeat: no-repeat;
@@ -106,14 +109,14 @@ h1{
   font-weight:bold;
   padding-top:2vw;
   border-bottom:0.2vw dotted #bbb;
-  color:#800;
+  color:#d00;
 }
 
 p,li{
   width:90%;
   margin-left:5%;
   font-family:Poppins,Arial,sans-serif;
-  font-size:2.5vw;
+  font-size:2.5vh;
 }
 
 code{
@@ -122,7 +125,7 @@ code{
   padding-left:0.4vw;
   padding-right:0.4vw;
   border-radius:0.2vw;
-  color:#800;
+  color:#d00;
 }
 
 example code{
@@ -161,7 +164,7 @@ example{
   width:5vw;
   height:5vw;
   margin-right:2vw;
-  background-color:#800;
+  background-color:#d00;
   margin-top:0.5vw;
 }
 
@@ -179,7 +182,7 @@ li a{
   display:block;
   position:relative;
   width:90%;
-  border-bottom:0.2vw solid #800;
+  border-bottom:0.2vw solid #d00;
 }
 
 #footer{
@@ -201,7 +204,7 @@ li a{
   margin-left:2%;
   top:1vw;
   border:none;
-  background-color:#800;
+  background-color:#d00;
   color:#85a;
   font-size:1.5vw;
   text-align:center;
@@ -215,7 +218,7 @@ li a{
 
 .footerbutton_active{
   background-color:#333;
-  color:#800;
+  color:#d00;
 }
 
 #copyright{
@@ -334,7 +337,9 @@ hr {
 Sausage, Onion, Mushroom, Green Pepper, Black Olive, Green Olive, Garlic, Pepperoni, Ham, Ground Beef, Sliced Beef, Bacon, Giardiniera, Spinach, Pineapple, Jalapeño.
           <br>
           <br>
-          <b>How to use:</b>
+          <b>How to Order:</b>
+
+          <button style="padding: 7px 5px 7px 5px;background-color: #ddd;border-radius: 10px;"><a style="color: #f00; text-decoration: none;font-size: 3vh;" href="tel:773-360-8164">Call 773-360-8164</a></button>
         </p>
          <!--  <ul>
             <li>Import the library.</li>
@@ -415,7 +420,7 @@ Sausage, Onion, Mushroom, Green Pepper, Black Olive, Green Olive, Garlic, Pepper
         </p>
         <h1 id="advanced">Advanced Syntax</h1>
         <p><b>Functions and tricks covered in this section:</b></p>
-          <ul style="color:#800">
+          <ul style="color:#d00">
             <li><a href="#nicknames">Nicknames and Types</a></li>
             <li><a href="#add">.add()</a></li>
             <li><a href="#remove">.remove()</a></li>
@@ -752,7 +757,7 @@ function scrollAction(){
   }
   if (index>=0){
     if (index>=4){index=4;}
-    document.getElementsByClassName("footerbutton")[index].style="background-color:#85a; color:#800";
+    document.getElementsByClassName("footerbutton")[index].style="background-color:#85a; color:#d00";
   }
 }
 
