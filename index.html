@@ -7,6 +7,20 @@
     <link rel="icon" href="pelement.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Russo+One" rel="stylesheet">
     <style>
+
+#couponbanner { 
+	background: url(http://www.pappaninospizza.com/wp-content/uploads/2018/03/stadium-1.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: auto;	
+	background-size: auto;	
+	width: 100%;
+	height: auto;
+	min-height: 300px;
+	min-width: 75vw;
+	background-position: center;
+
+ }
+
 #tophead{ width: 100%;
 height: 50vh;
 background-color: #fff; 
@@ -92,7 +106,7 @@ h1{
   font-weight:bold;
   padding-top:2vw;
   border-bottom:0.2vw dotted #bbb;
-  color:#600;
+  color:#800;
 }
 
 p,li{
@@ -108,7 +122,7 @@ code{
   padding-left:0.4vw;
   padding-right:0.4vw;
   border-radius:0.2vw;
-  color:#600;
+  color:#800;
 }
 
 example code{
@@ -147,7 +161,7 @@ example{
   width:5vw;
   height:5vw;
   margin-right:2vw;
-  background-color:#600;
+  background-color:#800;
   margin-top:0.5vw;
 }
 
@@ -165,7 +179,7 @@ li a{
   display:block;
   position:relative;
   width:90%;
-  border-bottom:0.2vw solid #600;
+  border-bottom:0.2vw solid #800;
 }
 
 #footer{
@@ -187,7 +201,7 @@ li a{
   margin-left:2%;
   top:1vw;
   border:none;
-  background-color:#600;
+  background-color:#800;
   color:#85a;
   font-size:1.5vw;
   text-align:center;
@@ -201,7 +215,7 @@ li a{
 
 .footerbutton_active{
   background-color:#333;
-  color:#600;
+  color:#800;
 }
 
 #copyright{
@@ -258,8 +272,8 @@ li a{
 .logo {
   display: inline-block;
   background-color: #ce2c38;
-  width: 150px;
-  height: 150px;
+  width: 225px;
+  height: 225px;
   border-radius: 50%;
   padding-top: 1.4em;
   font-family: 'Oswald', sans-serif;
@@ -313,7 +327,8 @@ hr {
       <div id="maincontent">
       	 <div id="tophead"></div>
       	<div id="onewhiteacross"></div> <!--/whiteacrossss-->
-        <h1 id="intro">Introduction</h1>
+      	<div id="couponbanner"></div>
+        <h1 id="intro">Introduction</h1 >
         <p>
           <b>PappaNino's Pizzeria</b> Choose as many toppings as you want!
 Sausage, Onion, Mushroom, Green Pepper, Black Olive, Green Olive, Garlic, Pepperoni, Ham, Ground Beef, Sliced Beef, Bacon, Giardiniera, Spinach, Pineapple, Jalapeño.
@@ -400,7 +415,7 @@ Sausage, Onion, Mushroom, Green Pepper, Black Olive, Green Olive, Garlic, Pepper
         </p>
         <h1 id="advanced">Advanced Syntax</h1>
         <p><b>Functions and tricks covered in this section:</b></p>
-          <ul style="color:#600">
+          <ul style="color:#800">
             <li><a href="#nicknames">Nicknames and Types</a></li>
             <li><a href="#add">.add()</a></li>
             <li><a href="#remove">.remove()</a></li>
@@ -667,7 +682,7 @@ Sausage, Onion, Mushroom, Green Pepper, Black Olive, Green Olive, Garlic, Pepper
             <p class="description"> {{ main.description }}</p>
           </div>
           <div class="price col-md-3">
-            <p class="price"> {{ main.price | currency }} </p>
+            <p class="price"> {{ main.price | price }} </p>
           </div>
         </div>
 
@@ -686,14 +701,14 @@ Sausage, Onion, Mushroom, Green Pepper, Black Olive, Green Olive, Garlic, Pepper
         </p>
         <p id="end"><br><br></p>
       </div>
-      <div id="copyright">© 2016 PicturElements</div>
+      <div id="copyright">©2018 PAPPANINO's</div>
     </div>
-    <div id="footer">
-      <div class="footerbutton" onclick=scroll("intro")>Introduction</div>
-      <div class="footerbutton" onclick=scroll("basic")>Basic Syntax</div>
-      <div class="footerbutton" onclick=scroll("advanced")>Advanced Syntax</div>
-      <div class="footerbutton" onclick=scroll("objects")>Objects</div>
-      <div class="footerbutton" onclick=scroll("credits")>Credits/License</div>
+    <div id="footer" style="width: 99%;left: 5px;z-index: 999;">
+      <div class="footerbutton" onclick=scroll("intro")>CALL NOW</div>
+      <div class="footerbutton" onclick=scroll("basic")>VIEW MENU</div>
+      <div class="footerbutton" onclick=scroll("advanced")>DAILY SPECIALS</div>
+      <div class="footerbutton" onclick=scroll("objects")>HAVE A QUESTION</div>
+      <div class="footerbutton" onclick=scroll("credits")>EMAIL US</div>
     </div>
     <script src="https://picturelements.github.io/testdropper.js"></script>
     
@@ -737,7 +752,7 @@ function scrollAction(){
   }
   if (index>=0){
     if (index>=4){index=4;}
-    document.getElementsByClassName("footerbutton")[index].style="background-color:#85a; color:#600";
+    document.getElementsByClassName("footerbutton")[index].style="background-color:#85a; color:#800";
   }
 }
 
